@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pARRAY</title>
+</head>
+
+<body>
+    <script>
+        console.log("g.k.kumar")
+
+        let numbar = [1,2,3,4,5]
+        console.log(numbar.length)
+        console.log(numbar.push(6))
+        console.log(numbar)
+        numbar.pop( )
+        numbar.pop()
+        console.log(numbar)
+        numbar.shift()
+        console.log(numbar)
+        numbar.unshift(0,1)
+        console.log(numbar)
+        console.log(numbar[3])
+        let snumbar = [1,2,3,4,5,["ram","g.k","kumar"]]
+        console.log(snumbar[5][1])
+
+        let rolnum = [1, 2, 3, "girraj", "g.k.kumar"]
+        let rolname = ["shashwat", "kumar", "yadav", "avi"]
+        console.log(rolname)
+        console.log(rolname.push("github", "g.k.yadav"))
+        console.log(rolname)
+        rolname.pop()
+        console.log(rolname)
+
+
+        const num = [1, 2, 3, 'Rohit']
+
+        const sname = ['Shashwat', 'Girraj', 'Avi', 'Ashish'];
+
+        console.log(sname.push("Github"))
+
+        console.log(sname[0].length - sname[sname.length - 2].length)
+
+        const name = ["Shashwat", "Girraj", "Avi", "Ashish"];
+
+        name.pop()
+        name.pop()
+        name.unshift("lalchand")
+        name.shift()
+        name.push("lalchand")
+        // [shashwat,girraj,lalchand]
+        console.log(name.length - name[0].length)
+
+        name.unshift("ayush", "rupendra");
+        const n = name.pop();
+        name.unshift(n);
+        // [lalchand,ayush,rupendra,shashwat,girraj,]
+        console.log(name[0].length - name[name.length - 1].length);
+
+
+
+        let names = ["ram","shyam","Rohit","yadav","kumar","ram","girraj"]
+        console.log(names.lastIndexOf("ram"))
+        console.log(names)
+        console.log(names.includes("name"))
+        console.log(names.includes("ram"))
+        console.log(names.includes("ram"))
+
+
+        let snames = ["ram", "shyam", "seeta", "geeta"];
+        // [Ram, Shyam, Seeta, Geeta]  // ans
+        for (let i = 0; i < snames.length; i++) {
+            let newname = snames[i].split("")  // r,a,m
+            let capname = newname[0].toUpperCase()
+            newname.shift()
+            newname.unshift(capname);
+            snames[i] = newname.join("")
+        }
+        console.log(snames)
+
+
+
+        let pname = ["ram", "shyam", "seeta", "geeta"];
+        for(let i=0; i<pname.length; i++){
+            let newnames = pname[i].split("")    
+            let upname = newnames[0].toUpperCase()
+            newnames.shift()    
+            newnames.unshift(upname)
+            pname[i] = newnames.join("")
+        }
+        console.log(names)
+
+
+
+
+
+
+
+
+
+
+
+         // HIGHER ORDER FUNCTIONS
+        // MAP() REDUCE(), FILTER()
+        // SOME() EVERY()
+        // FOREACH()
+    </script>
+</body>
+
+</html>
